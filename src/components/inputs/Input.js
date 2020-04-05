@@ -61,5 +61,5 @@ Input.propTypes = {
   readOnly: PropTypes.bool,
   required: PropTypes.bool,
   onChange: PropTypes.func,
-  variant: PropTypes.String,
+  variant: PropTypes.string,
 };

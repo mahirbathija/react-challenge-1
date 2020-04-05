@@ -1,5 +1,4 @@
-import { SET_USER } from 'ducks/types';
-import { REMOVE_USER } from 'ducks/types';
+import { SET_USER, REMOVE_USER } from 'ducks/types';
 
 const userState = {
   authenticated: false,

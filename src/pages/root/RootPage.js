@@ -22,7 +22,6 @@ export class RootPage extends Component {
   };
 
   handleLogin = () => {
-    this.props.history.push('/dashboard');
     this.props.setLoading(true);
     setTimeout(() => {
       this.props.setLoading(false);
@@ -32,11 +31,11 @@ export class RootPage extends Component {
   };
 
   onEmailChange = email => {
-    this.state.emailAddress = email;
+    this.setState({ emailAddress: email });
   };
 
   onPasswordChange = pass => {
-    this.state.password = pass;
+    this.setState({ password: pass });
   };
 
   render() {
@@ -47,7 +46,7 @@ export class RootPage extends Component {
       <div className={cn.page}>
         <div className={cn.outerBox}>
           <div className={cn.cognLogo}>
-            <img src={require('./cogn-logo-white.png')} alt="Cognitiv login logo" />
+            <img src={`${process.env.PUBLIC_URL}/cogn-logo-white.png`} alt="Cognitiv login logo" />
           </div>
           <div className={cn.container}>
             <div className={cn.loginContainer}>
