@@ -18,6 +18,7 @@ export class RootPage extends Component {
 
   state = {
     emailAddress: '',
+    // eslint-disable-next-line react/no-unused-state
     password: '',
   };
 
@@ -35,6 +36,7 @@ export class RootPage extends Component {
   };
 
   onPasswordChange = pass => {
+    // eslint-disable-next-line react/no-unused-state
     this.setState({ password: pass });
   };
 
