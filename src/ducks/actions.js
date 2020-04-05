@@ -15,7 +15,7 @@ export const setLoading = loading => ({
 // ------ USER ACTIONS ------ //
 export const setUser = user => {
   const values = new Uint32Array(1);
-  const key = window.crypto.getRandomValues(values);
+  const key = values[0];
   return {
     type: constants.SET_USER,
     payload: { user, key },
