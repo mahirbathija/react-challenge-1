@@ -2,3 +2,64 @@
   display: flex;
   flex-grow: 1;
 }
+
+.outerBox {
+  width: 680px;
+  height: 280px;
+  border: 1px solid #dfdfdf;
+  position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+  right: 0;
+  padding:30px;
+  margin: auto;
+  box-shadow: 0 0 1px #000
+}
+
+.cognLogo {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: calc(100% - 80px);
+}
+
+.loginContainer {
+  width: 45%;
+  padding-right: 5%;
+  position: relative;
+  height: 100%;
+  border-right: 1px solid #dfdfdf;
+}
+.termsContainer {
+  padding-left: 5%;
+  width: 45%;
+  right: 0;
+  position: relative;
+  height: 100%;
+}
+
+.h2 {
+  font-weight:200;
+  color: #56585b;
+  margin-bottom: 30px;
+}
+
+p {
+  line-height: 20px;
+  font-size: 12.5px;
+}
+.termsText {
+  color: #4e5154;
+}
+.forgotPass {
+  color: #eb66bb;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0px;
+}
