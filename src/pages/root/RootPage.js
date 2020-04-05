@@ -23,6 +23,7 @@ export class RootPage extends Component {
   };
 
   handleLogin = () => {
+    // Add email / password validator before moving ahead to dashboard
     this.props.setLoading(true);
     setTimeout(() => {
       this.props.setLoading(false);
