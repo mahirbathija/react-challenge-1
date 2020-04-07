@@ -18,11 +18,11 @@ export const setUser = user => {
   const key = values[0];
   return {
     type: constants.SET_USER,
-    payload: { user, key },
+    payload: { authenticated: true, user, key },
   };
 };
 
 export const removeUser = () => ({
   type: constants.REMOVE_USER,
-  payload: { user: '', key: '' },
+  payload: { authenticated: false, user: '', key: '' },
 });
